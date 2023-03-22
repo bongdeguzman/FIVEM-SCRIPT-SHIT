@@ -1,11 +1,11 @@
 CreateThread(function()
 	while true do
         local Waitk = 0
-        SetVehicleDensityMultiplierThisFrame(0.0)
-        SetPedDensityMultiplierThisFrame(0.0)
-        SetRandomVehicleDensityMultiplierThisFrame(0.0)
+        SetVehicleDensityMultiplierThisFrame(Config.TrafficFrequency)
+        SetPedDensityMultiplierThisFrame(Config.PedFrequency)
+        SetRandomVehicleDensityMultiplierThisFrame(Config.TrafficFrequency)
         SetScenarioPedDensityMultiplierThisFrame(0.0, 0.0)
-        SetParkedVehicleDensityMultiplierThisFrame(0.0)
+        SetParkedVehicleDensityMultiplierThisFrame(Config.TrafficFrequency)
         Wait(Waitk)
 	end
 end)
