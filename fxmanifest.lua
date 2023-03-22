@@ -5,5 +5,5 @@ description 'tweaks for a better roleplay'
 
 client_scripts{
     'config.lua',
-    'client/*'
+    'client.lua'
 } 
